@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+
+    max-width: 1440px;
+    margin: 0 auto !important;
+    font-family: 'Montserrat';
+}
+
+/* Navigation Bar */
+
+nav {
+    background: #FFFFFF;
+    height: 155px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 70px;
+
+
+}
+
+nav div.header-logo {
+    padding: 0px 20px;
+}
+
+nav div.nav-bar {
+    display: flex;
+    right: 40px;
+    width: 580px;
+    left: calc(50% - 580px/2);
+    top: calc(50% - px/2);
+    height: 48px;
+    top: calc(50% - 48px/2 - 1px);
+
+}
+
+nav div.nav-bar span {
+    margin: 0 44.7px;
+    line-height: 45px;
+}
+
+nav div.nav-bar span a {
+    color: #252B42;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+
+}
+
+.nav-bar a.active,
+.nav-bar a:hover {
+    color: #FA4A0C;
+}
+
+nav .menu-btn i {
+    color: #737373;
+    opacity: 0.6;
+    border-radius: 20px;
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+/* Hero area */
+section div.hero-area {
+    background-image: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url(../fullsized-images/hero-banner.jpg);
+    background-size: cover;
+    height: 619px;
+
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 73px 217.5px 223px;
+}
+
+#hero-h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+#hero-h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    font-size: 58px;
+    text-align: center;
+    color: white;
+    white-space: pre-wrap;
+
+
+}
+
+
+#hero-h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #F7F7F7;
+
+}
+
+.button-wrapper {
+    flex-direction: row;
+    margin: 54px 0 0 0;
+
+}
+
+#playstore-btn {
+    padding: 16px 58px;
+    border-radius: 30px;
+    font-size: 24px;
+    background-color: #FA4A0C;
+    border: none;
+    margin-right: 17px;
+
+}
+
+#appstore-btn {
+    padding: 16px 58px;
+    border-radius: 30px;
+    font-size: 24px;
+    border: 1px solid white;
+    margin-left: 17px;
+
+}
+
+
+#appstore-btn:hover {
+    background-color: #FA4A0C;
+    color: white;
+    border: none;
+}
+
+.app-preview {
+    height: 700px;
+}
+
+.previewimg-wrapper {
+    text-align: center;
+    position: relative;
+}
+
+#mobpre1 {
+    position: absolute;
+    left: 30%;
+    top: -120px
+}
+
+#mobpre2 {
+    position: absolute;
+    top: -70px
+}
+.hr_h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hr_h3 h3::before {
+    content: '';
+    width: 884px;
+    background: #C4C4C4;
+    border: 1.75px solid #E4E4E4;
+    height: max-content;
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+.guide-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 760px;
+    width: inherit;
+}
+
+.guide-preview-rev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 760px;
+    width: inherit;
+}
+
+
+.step h4 {
+    width: 560px;
+}
+
+.steps-rev h4 {
+    width: 560px;
+}
+
+.footer-banner {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url(../fullsized-images/footer-banner.jpg);
+}
+
+
+
+.button-wrapper2 {
+    flex-direction: row;
+    margin: 54px 0 0 0;
+
+}
+
+#playstore-btn2 {
+    padding: 16px 58px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: #FA4A0C;
+    border: none;
+    margin-right: 17px;
+
+}
+
+#appstore-btn2 {
+    padding: 16px 58px;
+    border-radius: 10px;
+    font-size: 24px;
+    border: 1px solid white;
+    margin-left: 17px;
+    border-color: white;
+    color: white;
+
+}
+
+
+#appstore-btn2:hover {
+    background-color: #FA4A0C;
+    color: white;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.footer-brand {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.social-icons .social-ico-item {
+    left: 9.37%;
+    right: 9.37%;
+    top: 16.99%;
+    bottom: 16.99%;
+    font-size: 32px;
+    margin: 16px;
+    align-items: center;
+    color: #FA4A0C;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+
+    nav {
+        background: #FFFFFF;
+        height: 145px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px 0px 50px;
+    }
+
+    nav div.header-logo {
+        padding: 0px;
+        max-width: 200px;
+        max-height: 96px;
+    }
+
+    nav div.nav-bar {
+
+        display: flex;
+
+        right: 1px;
+        width: 500px;
+        left: calc(50% - 580px/2);
+        top: calc(50% - px/2);
+        height: 40px;
+        top: calc(50% - 40px/2 - 1px);
+    }
+
+    nav div.nav-bar span {
+
+        margin: 0 30.7px;
+        line-height: 15px;
+    }
+
+    nav div.nav-bar span a {
+        display: block;
+    }
+}
+
+@media (max-width: 780px) {
+
+    nav {
+        background: #FFFFFF;
+        height: max-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 23px 16px 25px;
+        flex-wrap: wrap;
+
+    }
+
+    nav div.header-logo {
+        padding: 0px;
+        max-width: 104px;
+        max-height: 51.37px;
+    }
+
+    nav div.header-logo img {
+        padding: 0px;
+        max-width: 104px;
+        max-height: 51.37px;
+    }
+
+    nav div.nav-bar {
+
+        display: block;
+        position: relative;
+        left: 0;
+        background: #FFFFFF;
+        width: 100%;
+
+        height: 0px;
+        text-align: center;
+        overflow: hidden;
+
+    }
+
+    #click:checked~div.nav-bar {
+
+        overflow: visible;
+        height: max-content;
+    }
+
+    nav div.nav-bar span {
+
+        margin: 10px 0;
+    }
+
+    nav .menu-btn i {
+        display: block;
+    }
+}
