@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* CSS Reset */
 * {
     box-sizing: border-box;
@@ -146,8 +145,8 @@ section div.hero-area {
     border-radius: 30px;
     font-size: 24px;
     background-color: #FA4A0C;
-    border: none;
-    margin-right: 17px;
+    border: 1px solid white;
+    margin: 17px;
 
 }
 
@@ -156,16 +155,10 @@ section div.hero-area {
     border-radius: 30px;
     font-size: 24px;
     border: 1px solid white;
-    margin-left: 17px;
+    margin: 17px;
 
 }
 
-
-#appstore-btn:hover {
-    background-color: #FA4A0C;
-    color: white;
-    border: none;
-}
 
 .app-preview {
     height: 700px;
@@ -184,13 +177,16 @@ section div.hero-area {
 
 #mobpre2 {
     position: absolute;
-    top: -70px
+    top: -70px;
+    left: 48%;
 }
-.hr_h3{
+
+.hr_h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
+
 }
 
 .hr_h3 h3::before {
@@ -208,7 +204,18 @@ section div.hero-area {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-  }
+}
+
+.hr_h3 h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 0.8;
+}
 
 .guide-preview {
     display: flex;
@@ -228,14 +235,76 @@ section div.hero-area {
     width: inherit;
 }
 
+.steps-img img {
+    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+}
+
+.step {
+    position: static;
+    width: 568px;
+    height: 280px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 70px 0px;
+}
+
+.step h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #FA4A0C;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.step h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 17px 10px 27px 10px;
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 7.46%;
+    bottom: 7.46%;
+
+}
 
 .step h4 {
-    width: 560px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
 }
 
-.steps-rev h4 {
-    width: 560px;
-}
+
 
 .footer-banner {
     display: flex;
@@ -247,6 +316,43 @@ section div.hero-area {
     background-image: linear-gradient(0deg, rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url(../fullsized-images/footer-banner.jpg);
 }
 
+.footer-banner h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 5px 10px;
+    left: 1.91%;
+    right: 1.91%;
+    top: 12.99%;
+    bottom: 12.99%;
+}
+
+.footer-banner h4 {
+    left: 1.16%;
+    right: 1.16%;
+    top: 17.24%;
+    bottom: 17.24%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
 
 
 .button-wrapper2 {
@@ -256,32 +362,72 @@ section div.hero-area {
 }
 
 #playstore-btn2 {
-    padding: 16px 58px;
+ 
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
     border-radius: 10px;
-    font-size: 24px;
-    background-color: #FA4A0C;
-    border: none;
-    margin-right: 17px;
-
+    letter-spacing: 0.2px;
+    color: #FFFFFF;    
+    align-items: center;
+    padding: 18px 31px;
+    width: 142px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    background: #FA4A0C;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
 }
 
 #appstore-btn2 {
-    padding: 16px 58px;
+
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    width: 173px;
+    height: 60px;
+    left: 158px;
+    top: 2px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
     border-radius: 10px;
-    font-size: 24px;
-    border: 1px solid white;
-    margin-left: 17px;
-    border-color: white;
-    color: white;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
 
 }
 
 
-#appstore-btn2:hover {
+
+#appstore-btn2:hover,
+#playstore-btn2:hover,
+#playstore-btn2.active,
+#appstore-btn2.active
+#appstore-btn:hover,
+#playstore-btn:hover,
+#playstore-btn.active,
+#appstore-btn.active{
     background-color: #FA4A0C;
     color: white;
     border: none;
 }
+
 
 .footer {
     display: flex;
@@ -321,6 +467,7 @@ section div.hero-area {
     justify-content: center;
     align-items: center;
     font-family: Roboto;
+    color: #5c5c5c;
 }
 
 
