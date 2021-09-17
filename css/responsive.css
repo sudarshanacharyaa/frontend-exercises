@@ -144,9 +144,10 @@ section div.hero-area {
     padding: 16px 58px;
     border-radius: 30px;
     font-size: 24px;
-    background-color: #FA4A0C;
+    background-color: transparent;
     border: 1px solid white;
     margin: 17px;
+    color: white;
 
 }
 
@@ -156,6 +157,8 @@ section div.hero-area {
     font-size: 24px;
     border: 1px solid white;
     margin: 17px;
+    background-color: transparent;
+    color: white;
 
 }
 
@@ -418,7 +421,7 @@ section div.hero-area {
 #appstore-btn2:hover,
 #playstore-btn2:hover,
 #playstore-btn2.active,
-#appstore-btn2.active
+#appstore-btn2.active,
 #appstore-btn:hover,
 #playstore-btn:hover,
 #playstore-btn.active,
