@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* CSS Reset */
 * {
     box-sizing: border-box;
@@ -98,15 +99,15 @@ section div.hero-area {
     padding: 73px 217.5px 223px;
 }
 
-.hero-content-wrapper{
+.hero-content-wrapper {
     background-size: cover;
     position: absolute;
     justify-content: center;
-    display:  flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    
+
 }
 
 #hero-h3 {
@@ -157,22 +158,30 @@ section div.hero-area {
 #playstore-btn {
     padding: 16px 58px;
     border-radius: 30px;
-    font-size: 24px;
     background-color: transparent;
     border: 1px solid white;
     margin: 17px;
     color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
 
 }
 
 #appstore-btn {
     padding: 16px 58px;
     border-radius: 30px;
-    font-size: 24px;
     border: 1px solid white;
     margin: 17px;
     background-color: transparent;
     color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
 
 }
 
@@ -197,7 +206,7 @@ section div.hero-area {
     position: relative;
     top: -70px;
     left: auto;
-    
+
 }
 
 .hr_h3 {
@@ -382,7 +391,7 @@ section div.hero-area {
 }
 
 #playstore-btn2 {
- 
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -390,7 +399,7 @@ section div.hero-area {
     line-height: 28px;
     border-radius: 10px;
     letter-spacing: 0.2px;
-    color: #FFFFFF;    
+    color: #FFFFFF;
     align-items: center;
     padding: 18px 31px;
     width: 142px;
@@ -442,7 +451,7 @@ section div.hero-area {
 #appstore-btn:hover,
 #playstore-btn:hover,
 #playstore-btn.active,
-#appstore-btn.active{
+#appstore-btn.active {
     background-color: #FA4A0C;
     color: white;
     border: none;
@@ -495,23 +504,28 @@ section div.hero-area {
 
 
 @media (max-width: 1048px) {
+
     /* Nav Bar */
-    nav{
+    nav {
         padding-left: 40px;
         justify-content: space-between;
     }
-    nav div.nav-bar{
+
+    nav div.nav-bar {
         width: 485px;
     }
+
     nav div.header-logo {
         padding: 0px;
         max-width: 200px;
         max-height: 96px;
     }
+
     nav div.nav-bar span {
         margin: 10px 40px;
         line-height: 30px;
     }
+
     nav div.nav-bar span a {
         display: block;
         font-size: 16px;
@@ -527,40 +541,43 @@ section div.hero-area {
         letter-spacing: 0.1px;
         line-height: 36px;
         color: #FFFFFF;
-    }    
+    }
+
     #hero-h1 {
         font-size: 55px;
         line-height: 80px;
     }
 
     /* App preview */
-    .app-preview{
+    .app-preview {
         display: flex;
         position: relative;
         height: 600px;
-        justify-content: center;      
-        
+        justify-content: center;
+
     }
+
     .previewimg-wrapper {
         text-align: center;
         position: absolute;
         margin: auto;
-        justify-content: center;        
+        justify-content: center;
     }
+
     #mobpre1 {
         position: relative;
         left: 4%;
         top: -120px;
         z-index: 1;
     }
-    
+
     #mobpre2 {
         position: relative;
         top: -70px;
         left: auto;
-        
+
     }
-    
+
     /* Steps Section */
 
 
@@ -570,36 +587,33 @@ section div.hero-area {
 
     nav {
         background: #FFFFFF;
-        height: max-content;
+        height: 112px;
+        max-height: auto;
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
         justify-content: space-between;
-        padding: 16px 23px 16px 25px;
         flex-wrap: wrap;
+        padding: 16px 0 16px 0;
 
-    }
-
-    nav div.header-logo {
-        padding: 0px;
-        max-width: 104px;
-        max-height: 51.37px;
     }
 
     nav div.header-logo img {
         padding: 0px;
         max-width: 104px;
         max-height: 51.37px;
+        margin-left: 25px;
     }
 
     nav div.nav-bar {
 
         display: block;
         position: relative;
-        left: 0;
+        ;
         background: #FFFFFF;
         width: 100%;
-
+        left: 0;
         height: 0px;
         text-align: center;
         overflow: hidden;
@@ -610,14 +624,120 @@ section div.hero-area {
 
         overflow: visible;
         height: max-content;
+
     }
 
     nav div.nav-bar span {
 
-        margin: 10px 0;
+        margin: 10px 10px;
+        width: 100%;
     }
 
     nav .menu-btn i {
         display: block;
+        margin: 32px 23px;
+    }
+
+    section div.hero-area {
+        width: 100%;
+        min-width: 414px;
+        height: 704px;
+        left: 0px;
+        margin-top: 112px;
+        background: #FAFAFA;
+        flex: none;
+        order: 1;
+        align-self: none;
+        flex-grow: 0;
+        margin: 0px 0px;
+        padding: 0;
+    }
+
+    .hero-content-wrapper {
+        background-size: cover;
+        margin-top: -100px;
+        justify-content: stretch;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    #hero-h3 {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        line-height: 24px;
+        color: #737373;
+        padding: 10.42% 2.76%;
+        padding-bottom: 5.42%;
+
+    }
+
+    #hero-h1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 42px;
+        letter-spacing: 0.2px;
+        font-size: 36px;
+        text-align: center;
+        color: #252B42;
+        white-space: pre-wrap;
+        margin-bottom: 27px;
+
+    }
+
+    #hero-h4 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 38px;
+
+        margin: 0px 10px;
+        margin-bottom: 40px;
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        color: #737373;
+
+    }
+
+
+    #playstore-btn {
+
+        margin: 8px;
+        margin-top: 0px;
+
+
+    }
+
+    #appstore-btn {
+
+        border: 1px solid #FA4A0C;
+        margin: 8px;
+        color: #FA4A0C;
+
+    }
+
+    .app-preview {
+        height: 700px;
+        width: 100%;
+    }
+
+    #mobpre1 {
+
+        top: -80px;
+        width: 49.4%;
+    }
+    
+    #mobpre2 {
+
+        width: 49.4%;
+    
     }
 }
