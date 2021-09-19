@@ -268,7 +268,6 @@ section div.hero-area {
 }
 
 .step {
-    position: static;
     width: 568px;
     height: 280px;
     left: 0px;
@@ -309,7 +308,7 @@ section div.hero-area {
     order: 0;
     flex-grow: 0;
     margin: 17px 10px 27px 10px;
-    position: static;
+    position: relative;
     left: 0%;
     right: 0%;
     top: 7.46%;
@@ -342,7 +341,7 @@ section div.hero-area {
     height: 510px;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(0deg, rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url(../fullsized-images/footer-banner.jpg);
+    background: linear-gradient(0deg, rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url(../fullsized-images/footer-banner.jpg);
 }
 
 .footer-banner h2 {
@@ -500,9 +499,9 @@ section div.hero-area {
 }
 
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 
-
+/* Responsiveness for Small Desktops */
 @media (max-width: 1048px) {
 
     /* Nav Bar */
@@ -554,7 +553,6 @@ section div.hero-area {
         position: relative;
         height: 600px;
         justify-content: center;
-
     }
 
     .previewimg-wrapper {
@@ -575,13 +573,27 @@ section div.hero-area {
         position: relative;
         top: -70px;
         left: auto;
-
     }
 
     /* Steps Section */
+    .guide-preview{
+        width: 100%;
+    }
 
+    .steps-img img {
+        width: 100%;
+    }
 
+    .step{
+        width: 50%;
+    }
+
+    .guide-preview-rev{
+        width: 100%;
+    }
 }
+
+/* Mobile Responsiveness till 414px */
 
 @media (max-width: 780px) {
 
@@ -596,7 +608,6 @@ section div.hero-area {
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 16px 0 16px 0;
-
     }
 
     nav div.header-logo img {
@@ -607,28 +618,22 @@ section div.hero-area {
     }
 
     nav div.nav-bar {
-
         display: block;
         position: relative;
-        ;
         background: #FFFFFF;
         width: 100%;
         left: 0;
         height: 0px;
         text-align: center;
         overflow: hidden;
-
     }
 
     #click:checked~div.nav-bar {
-
         overflow: visible;
         height: max-content;
-
     }
 
     nav div.nav-bar span {
-
         margin: 10px 10px;
         width: 100%;
     }
@@ -661,7 +666,6 @@ section div.hero-area {
         flex-direction: column;
         text-align: center;
         align-items: center;
-
     }
 
     #hero-h3 {
@@ -674,7 +678,6 @@ section div.hero-area {
         color: #737373;
         padding: 5.42% 2.76%;
         padding-bottom: 5.42%;
-
     }
 
     #hero-h1 {
@@ -688,7 +691,6 @@ section div.hero-area {
         color: #252B42;
         white-space: pre-wrap;
         margin-bottom: 27px;
-
     }
 
     #hero-h4 {
@@ -697,31 +699,22 @@ section div.hero-area {
         font-weight: 500;
         font-size: 24px;
         line-height: 38px;
-
         margin: 0px 10px;
         margin-bottom: 40px;
         text-align: center;
         letter-spacing: 0.2px;
-
         color: #737373;
-
     }
 
-
     #playstore-btn {
-
         margin: 8px;
         margin-top: 0px;
-
-
     }
 
     #appstore-btn {
-
         border: 1px solid #FA4A0C;
         margin: 8px;
         color: #FA4A0C;
-
     }
 
     .app-preview {
@@ -730,14 +723,170 @@ section div.hero-area {
     }
 
     #mobpre1 {
-
         top: -80px;
         width: 49.4%;
     }
-    
-    #mobpre2 {
 
+    #mobpre2 {
         width: 49.4%;
-    
+    }
+
+    .hr_h3 h3::before {
+        top: 80px;
+        width: 100%;
+        left: 50%;
+
+    }
+
+    .hr_h3 h3 {
+        position: relative;
+        top: -150px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #000000;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 1;
+    }
+
+    .guide-preview {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .steps-img img {
+        display: flex;
+        width: 100%;
+        position: relative;
+        top: 335px;
+        margin-bottom: 50px;
+        filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+    }
+
+    .step {
+        width: auto;
+        position: relative;
+        top: -615px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .guide-preview-rev {
+        flex-direction: column-reverse;
+        height: auto;
+        position: relative;
+        top: 50px;
+        margin-bottom: 160px;
+    }
+
+    .guide-preview-rev .step{
+        top: -540px;
+    }
+
+    .step h3 {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .step h2 {
+
+        top: 4.03%;
+        bottom: 4.03%;
+        margin: 0px 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .step h4 {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 5.81%;
+        bottom: 5.81%;
+    }
+
+    .guide-preview-rev img {
+        display: flex;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        top: 400px;
+        filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+    }
+
+    .footer-banner {
+        background: #252B42;
+        height: auto;
+    }
+
+    .footer-banner h2 {
+        margin: 120px 54px 20px 54px;
+    }
+
+    .footer-banner h4 {
+        color: #BDBDBD;
+        margin: 0px 86.5px 60px 86.5px;
+    }
+
+    .button-wrapper2 {
+        margin: 0px 39.5px 110px 39.5px;
+        display: inline-block;
+    }
+
+    #playstore-btn2 {
+        padding: 0px;
+        margin: 0px;
+        margin-right: 8px;
+
+
+    }
+
+    #appstore-btn2 {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 8px;
+
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 172px;
+    }
+
+    .footer-brand {
+        display: none;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-bottom: 8px;
+        align-items: center;
+    }
+
+    .social-icons .social-ico-item {
+        left: 10.94%;
+        right: 10.94%;
+        top: 10.94%;
+        bottom: 10.94%;
+    }
+
+    .copyrights {
+        top: -45px;
+        position: relative;
+        align-items: center;
     }
 }
