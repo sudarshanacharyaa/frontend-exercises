@@ -19,34 +19,65 @@ body {
 
 }
 
-.navigation-bar{
+.agency-title{
+    display: flex;
+    height: 32px;
+    background: #F0F0F0;
+    width: inherit;
+}
+
+.agency-title img{
+    position: relative;
+    left: 84px;
+    top: 9px;
+    bottom: 8px;
+    width: 12.5px;
+    height: 15px;
+}
+
+.agency-title span{
+    position: relative;
+    width: 239px;
+    height: 15px;
+    left: 95px;
+    top: 9px;    
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;  
+    color: #000000;
+
+}
+
+.navigation-bar {
     width: inherit;
     height: 88px;
     display: flex;
     align-items: center;
-    background-color :#AD3241;
+    background-color: #AD3241;
     justify-content: space-between;
-    
-    
+
+
 }
 
-.nlb-logo{
-       
+.nlb-logo {
+
     background: #264EA2;
     height: inherit;
     align-items: center;
-    
+
 }
 
-.nlb-logo img{
+.nlb-logo img {
     width: 46px;
     height: 56px;
     margin: 14px 36px 18px 88px;
-    
+
 }
 
-.music-logo{
-    height:inherit;
+.music-logo {
+    height: inherit;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -54,25 +85,29 @@ body {
     justify-content: center;
     color: white;
     position: relative;
+    left: 25px;
 }
 
-.music-logo .heading{
-    font-weight: bold;
-    flex-direction: column; 
-    font-size: 12px;
-    font-style: normal;
-    line-height: 15px;
+.music-logo .heading {
+    flex-direction: column;
     margin-bottom: 6px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
 }
 
-.music-logo img{
+.music-logo img {
     margin: 0;
     position: relative;
-    left: -3.5px;   
-   
+    left: -3.5px;
+    width: 87.09px;
+    height: 21.65px;
+
 }
 
-.music-logo i{
+.music-logo i {
     color: white;
     width: 24px;
     height: 24px;
@@ -88,9 +123,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .one-search img {
+}
+
+.one-search img {
     width: 113px;
     object-fit: cover;
-  }
+}
+
+.details-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-books{
+    display: flex;
+    flex-direction: row;    
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    left: 270px;
+}
+
+.my-folders{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    position: absolute;
+}
