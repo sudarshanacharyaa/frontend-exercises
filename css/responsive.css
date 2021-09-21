@@ -639,18 +639,18 @@ section div.hero-area {
     }
 
     nav .menu-btn i {
-        display: block;
+        display: flex;
         margin: 32px 23px;
     }
 
     section div.hero-area {
         width: 100%;
-        min-width: 414px;
-        height: 704px;
+        height: 850px;
         left: 0px;
-        margin-top: 112px;
-        background: #FAFAFA;
-        flex: none;
+        margin-top: 11px;
+        background: red;
+        flex: flex;
+        flex-direction: column;
         order: 1;
         align-self: none;
         flex-grow: 0;
@@ -660,11 +660,13 @@ section div.hero-area {
 
     .hero-content-wrapper {
         background-size: cover;
-        margin-top: -100px;
-        justify-content: stretch;
+        /* margin: 0 auto; */
+        margin-top: -185px;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         text-align: center;
+        
         align-items: center;
     }
 
@@ -690,7 +692,10 @@ section div.hero-area {
         text-align: center;
         color: #252B42;
         white-space: pre-wrap;
+        padding: 0 10px;
         margin-bottom: 27px;
+        
+        
     }
 
     #hero-h4 {
@@ -706,41 +711,51 @@ section div.hero-area {
         color: #737373;
     }
 
+    .button-wrapper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+        width: 100%;
+        margin: 0 auto;
+    }
+
     #playstore-btn {
-        margin: 8px;
-        margin-top: 0px;
+        margin: 5px;
+        
+       
     }
 
     #appstore-btn {
         border: 1px solid #FA4A0C;
-        margin: 8px;
+        margin: 5px;
         color: #FA4A0C;
     }
 
     .app-preview {
-        height: 700px;
+        
         width: 100%;
+        display: flex;
     }
 
+
     #mobpre1 {
-        top: -80px;
-        width: 49.4%;
+        width: 49%;
     }
 
     #mobpre2 {
-        width: 49.4%;
+        width: 49%;
     }
 
     .hr_h3 h3::before {
-        top: 80px;
+        top: 40px;
         width: 100%;
         left: 50%;
 
     }
 
     .hr_h3 h3 {
-        position: relative;
-        top: -150px;
+    
         font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
@@ -756,55 +771,51 @@ section div.hero-area {
     }
 
     .guide-preview {
-        flex-direction: column;
-        height: auto;
-        position: relative;
-        top: 50px;
-        margin-bottom: 50px;
+        flex-direction: column-reverse;
+        height: max-content;
+        margin: 100px 0;
+        padding: 0 10px;
+        
+    }
+
+    .steps-img{
+        margin-top: 200px;
     }
 
     .steps-img img {
-        display: flex;
-        width: 100%;
-        position: relative;
-        top: 335px;
-        margin-bottom: 50px;
+    
+        width: 100%;       
         filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
     }
 
     .step {
         width: auto;
-        position: relative;
-        top: -615px;
         align-items: center;
         justify-content: center;
         text-align: center;
         margin-top: 0px;
+        padding: 0 10px !important;
     }
 
     .guide-preview-rev {
-        flex-direction: column-reverse;
-        height: auto;
-        position: relative;
-        top: 50px;
-        margin-bottom: 160px;
+        flex-direction: column;
+        height: max-content;
+        padding: 0 10px;
     }
 
-    .guide-preview-rev .step{
-        top: -540px;
-    }
+
 
     .step h3 {
         text-align: center;
         align-items: center;
         justify-content: center;
+        padding: 0 10px;
     }
 
     .step h2 {
 
-        top: 4.03%;
-        bottom: 4.03%;
         margin: 0px 10px;
+        padding: 0 10px;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -814,17 +825,18 @@ section div.hero-area {
         text-align: center;
         align-items: center;
         justify-content: center;
-        position: relative;
-        top: 5.81%;
-        bottom: 5.81%;
+        padding: 20px 0;
+    }
+
+    .guide-preview-rev{
+        display: flex;
     }
 
     .guide-preview-rev img {
-        display: flex;
-        width: 100%;
-        position: relative;
+      
+        width: 100%;       
         height: 100%;
-        top: 400px;
+        object-fit: cover;       
         filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
     }
 
@@ -844,13 +856,17 @@ section div.hero-area {
 
     .button-wrapper2 {
         margin: 0px 39.5px 110px 39.5px;
-        display: inline-block;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
 
     #playstore-btn2 {
         padding: 0px;
         margin: 0px;
-        margin-right: 8px;
+        margin-bottom: 5px;
+        
 
 
     }
@@ -858,7 +874,7 @@ section div.hero-area {
     #appstore-btn2 {
         padding: 0px;
         margin: 0px;
-        margin-left: 8px;
+        margin-top: 5px;
 
     }
 
