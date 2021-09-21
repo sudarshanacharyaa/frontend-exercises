@@ -19,14 +19,14 @@ body {
 
 }
 
-.agency-title{
+.agency-title {
     display: flex;
     height: 32px;
     background: #F0F0F0;
     width: inherit;
 }
 
-.agency-title img{
+.agency-title img {
     position: relative;
     left: 84px;
     top: 9px;
@@ -35,17 +35,17 @@ body {
     height: 15px;
 }
 
-.agency-title span{
+.agency-title span {
     position: relative;
     width: 239px;
     height: 15px;
     left: 95px;
-    top: 9px;    
+    top: 9px;
     font-family: "Helvetica Neue";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;  
+    line-height: 15px;
     color: #000000;
 
 }
@@ -130,24 +130,121 @@ body {
     object-fit: cover;
 }
 
-.details-bar{
+.details-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #F0F0F0;
 }
 
-.my-books{
+.my-books {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     position: absolute;
-    left: 270px;
+    left: 400px;
 }
 
-.my-folders{
+.my-folders {
     display: flex;
     justify-content: space-between;
     justify-content: center;
     position: absolute;
+    left: 800px;
+}
+
+.hero-banner {
+
+    display: flex;
+    background: linear-gradient(75.33deg, #000000 19.93%, rgba(0, 0, 0, 0) 40.77%), url(../nlb-images/hero-orchestra.jpg);
+    background-size: cover;
+    color: white;
+    position: relative;
+    width: 1440px;
+    height: 394px;
+    left: 0px;
+    /* top: 165px; */
+
+}
+
+.hero-banner .desc {
+    position: absolute;
+    width: 412px;
+    height: 96px;
+    left: 82px;
+    top: 68px;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.hero-banner .heading {
+    position: absolute;
+    width: 478px;
+    height: 40px;
+    left: 83px;
+    top: 204px;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+
+
+    /* NLB/White */
+
+    color: #FFFFFF;
+
+}
+
+.hero-banner .d-flex {
+    position: absolute;
+    width: 432px;
+    height: 48px;
+    left: 82px;
+    top: 266px;
+    background: #FFFFFF;
+    border: 0.5px solid #BDBDBD;
+    box-sizing: border-box;
+}
+
+.d-flex .form-control {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    opacity: 1;
+
+}
+
+.d-flex .form-control .btn {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 514px;
+    top: 431px;
+
+    background: #AD3241;
+    /* Gray 4 */
+
+    border: 0.5px solid #BDBDBD;
+    box-sizing: border-box;
+}
+
+.d-flex .form-control .btn i {
+    position: absolute;
+    left: 19.98%;
+    right: 17.88%;
+    top: 19%;
+    bottom: 18.88%;
+    color: #FFFFFF;
+    ;
 }
