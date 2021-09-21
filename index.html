@@ -41,26 +41,19 @@
                 </div>
             </nav>
 
-            <header class="details-bar">
-                <div class="my-lib">
-                    <span id="myLib">My Library:</span>
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                    <span>library@orchard</span>
-                </div>
-                <div class="my-books">
-                    <span>My Books:</span>
-                    <span>English</span>
-                    <span><i class="fas fa-plus"></i></span>
-                </div>
-                <div class="my-folders">
-                    <span>My Folders</span>
-                    <span><i class="fas fa-heart"></i></span>
-                    <span>43</span>
-                    <span><i class="fas fa-user"></i> Calvin Ho <i class="fas fa-chevron-down"></i> </span>
-                    <span><i class="fas fa-search"></i></span>
-                </div>
+            <header class="info-header">
+               
+                <div class="info" id="lib">My Library:<i class="bi bi-geo-alt-fill"></i><span><a
+                            href="#">library@orchard</a></span></div>
+                <div class="info" id="book">My Books: <span>English</span><i class="bi bi-plus"></i></div>
+                
+                <a class="info a" href="#">My Folders</a>
+                <div class="info"><i class="fas fa-heart"></i><span>43</span></div>
+                <div class="info"><i class="fas fa-user"></i><span>Calvin Ho</span><i
+                        class="fas fa-chevron-down"></i></div>
+                <i class="fas fa-search info"></i>
 
-            </header>
+                </header>
         </div>
 
         <div class="hero-banner">
@@ -77,7 +70,56 @@
                 <input class="form-control me-2" type="search" placeholder="Explore any artists, title or genre" aria-label="Search">
                 <button class="btn" type="submit"><i class="fas fa-search"></i></button>
               </form>
+
+
+              <div id="grid-custom" class="container-fluid">
+                <div class="row justify-content-end ">
+
+                    <div id="cell-1" class="col-4">
+                        <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
+                        <img src="./nlb-images/red-jacket.jpg" alt="">
+                    </div>
+                    <div id="cell-2" class="col-4">
+                        <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
+                        <img src="./nlb-images/graduated-oldman.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-center even-rows">
+                    <div id="cell-3" class="col-4">
+                        <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
+                        <img src="./nlb-images/black-tshirt-woman.jpg" alt="">
+                    </div>
+                    <div id="cell-4" class="col-4 bg-white">
+                        <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
+                        <img src="./nlb-images/black-tshirt-woman.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div id="cell-5" class="col-4">
+                        <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
+                        <img src="./nlb-images/songs-for-lostchoices-1.jpg" alt="">
+                    </div>
+                    <div id="cell-6" class="col-4">
+                        <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
+                        <img src="./nlb-images/alone_li-wei.jpg" alt="">
+                    </div>
+                </div>
+                <div id="cell-7" class="row justify-content-center even-rows">
+                    <div class="col-4 ">
+        
+                    </div>
+                    <div id="cell-8" class="col-4">
+                        <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
+                        <img src="./nlb-images/black-jacket.jpg" alt="">
+                    </div>
+                </div>
+        
+            </div>
+
+
         </div>
+
+
 
 
     </div>

@@ -130,28 +130,74 @@ body {
     object-fit: cover;
 }
 
-.details-bar {
+/*info header*/
+.info-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: #F0F0F0;
+    left: 0px;
+    height: 44px;
+    padding: 12px 83px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
 }
 
-.my-books {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    left: 400px;
+
+
+
+#lib {
+
+    color: #222222;
 }
 
-.my-folders {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    position: absolute;
-    left: 800px;
+#lib i {
+    color: #264EA2;
+}
+
+#lib span>a {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: #264EA2;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+#book {
+    color: #222222;
+}
+
+#book span {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #264EA2;
+}
+
+#book i {
+    color: #264EA2;
+}
+
+.info {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #264EA2;
+}
+
+.a {
+    margin-left: 380px;
+    text-decoration: none;
+}
+
+.info span {
+    margin: 0px 4px;
 }
 
 .hero-banner {
@@ -247,4 +293,65 @@ body {
     bottom: 18.88%;
     color: #FFFFFF;
     ;
+}
+
+#grid-custom {
+    display: grid;
+    text-align: right;
+}
+
+.col-4 {
+    width: 392px !important;
+    padding: 0% !important;
+    position: relative;
+
+}
+
+.even-rows {
+    position: relative;
+    left: 135px;
+}
+
+
+
+/* #cell-1{
+    background-image: url(./nlb-images/red-jacket.jpg);
+}
+#cell-2{
+    background: url(./nlb-images/graduated-oldman.jpg);
+}
+#cell-3{
+    background: url(./nlb-images/black-tshirt-woman.jpg);
+}
+#cell-4{
+    background: #AD3241;
+}
+#cell-5{
+    background: url(./nlb-images/songs-for-lostchoices-1.jpg);
+}
+#cell-6{
+    background: url(./nlb-images/alone_li-wei.jpg);
+}
+#cell-7{
+    background: transparent;
+}
+#cell-8{
+    background: url(./nlb-images/black-jacket.jpg); */
+
+.bottom-right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: #AD3241;
+    padding: 10px 19.28px 12px 16px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.bottom-right i{
+    margin-left: 11.28px;
 }
