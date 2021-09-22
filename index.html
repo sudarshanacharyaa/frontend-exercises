@@ -42,21 +42,21 @@
             </nav>
 
             <header class="info-header">
-               
+
                 <div class="info" id="lib">My Library:<i class="bi bi-geo-alt-fill"></i><span><a
                             href="#">library@orchard</a></span></div>
                 <div class="info" id="book">My Books: <span>English</span><i class="bi bi-plus"></i></div>
-                
+
                 <a class="info a" href="#">My Folders</a>
                 <div class="info"><i class="fas fa-heart"></i><span>43</span></div>
-                <div class="info"><i class="fas fa-user"></i><span>Calvin Ho</span><i
-                        class="fas fa-chevron-down"></i></div>
+                <div class="info"><i class="fas fa-user"></i><span>Calvin Ho</span><i class="fas fa-chevron-down"></i>
+                </div>
                 <i class="fas fa-search info"></i>
 
-                </header>
+            </header>
         </div>
 
-        <div class="hero-banner">
+        <section class="hero-banner">
             <div class="desc">
                 A collection of music composed or published by Singaporeans, music produced or published in Singapore,
                 and music related to Singapore.
@@ -67,12 +67,12 @@
             </div>
 
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Explore any artists, title or genre" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Explore any artists, title or genre"
+                    aria-label="Search">
                 <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-              </form>
+            </form>
 
-
-              <div id="grid-custom" class="container-fluid">
+            <div id="grid-custom" class="container-fluid">
                 <div class="row justify-content-end ">
 
                     <div id="cell-1" class="col-4">
@@ -104,20 +104,225 @@
                         <img src="./nlb-images/alone_li-wei.jpg" alt="">
                     </div>
                 </div>
-                <div id="cell-7" class="row justify-content-center even-rows">
-                    <div class="col-4 ">
-        
+                <div class="row justify-content-center even-rows">
+                    <div id="cell-7" class="col-4 ">
+
                     </div>
                     <div id="cell-8" class="col-4">
                         <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
                         <img src="./nlb-images/black-jacket.jpg" alt="">
                     </div>
                 </div>
-        
             </div>
+        </section>
 
+        <div class="box" id="first-box"></div>
 
+        <div class="nav-content-container">
+            <section class="sidebar">
+                <span>Explore by genre</span>
+                <a href="">Chinese</a>
+                <a href="">Malay</a>
+                <a href="">Indian</a>
+                <a href="">Folk</a>
+                <a href="">Pop</a>
+                <a href="">Jazz</a>
+                <a href="">Rock/ Metal</a>
+                <a href="">Trance/ Techno</a>
+                <a href="">Indie</a>
+                <a href="">Hip-Hop</a>
+                <div class="dropdown">
+                    <a class="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others <i class="fas fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="featured-container">
+                <div class="container-title">
+                    <span class="title-bullet"></span><span>Featured</span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card paper">
+                                <div class="row my-row "><img src="./nlb-images/sg-songs-fest-1.png" alt="oneSearch">
+                                </div>
+                                <div class="row my-row">
+                                    <div class="col"><img src="./nlb-images/sg-songs-fest-2.jpg" alt="oneSearch">
+                                    </div>
+                                    <div class="col"><img src="./nlb-images/sg-songs-fest-3.jpg" alt="oneSearch">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                    <p class="card-text">By You</p>
+                                    <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card paper">
+                                <div class="row my-row "><img src="./nlb-images/sg-songs-fest-1.png" alt="oneSearch">
+                                </div>
+                                <div class="row my-row">
+                                    <div class="col"><img src="./nlb-images/sg-songs-fest-2.jpg" alt="oneSearch">
+                                    </div>
+                                    <div class="col"><img src="./nlb-images/sg-songs-fest-3.jpg" alt="oneSearch">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                    <p class="card-text">By You</p>
+                                    <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card paper">
+                                <div class="row my-row ">
+                                    <img src="./nlb-images/sg-songs-fest-1.png">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                    <p class="card-text">By You</p>
+                                    <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-title">
+                    <span class="title-bullet"></span><span>Featured</span>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./nlb-images/jazz-vector-art.jpg" alt="oneSearch">
+                        </div>
+
+                        <div class="col-md-7">
+                            <span>Listen to the top Jazz tracks locally composed in the little red dot.</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="container-title">
+                        <span class="title-bullet"></span><span>Featured</span>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="row my-row ">
+                                        <img src="./nlb-images/Dick-Lee.png">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                        <p class="card-text">By You</p>
+                                        <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="row my-row ">
+                                        <img src="./nlb-images/Corrine-May.png">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                        <p class="card-text">By You</p>
+                                        <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="row my-row ">
+                                        <img src="./nlb-images/Fann-Wong.png">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                        <p class="card-text">By You</p>
+                                        <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-title">
+                        <span class="title-bullet"></span><span>Featured</span>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="row my-row ">
+                                        <img src="./nlb-images/t-time.jpg">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                        <p class="card-text">By You</p>
+                                        <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="row my-row ">
+                                        <img src="./nlb-images/a-perfect-day.jpg">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                        <p class="card-text">By You</p>
+                                        <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="row my-row ">
+                                        <img src="./nlb-images/love-is-the-answer.jpg">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                        <p class="card-text">By You</p>
+                                        <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="row my-row ">
+                                        <img src="./nlb-images/antara-yang-manis.jpg">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="bi bi-folder2"></i>Changi Airport Research</h4>
+                                        <p class="card-text">By You</p>
+                                        <p class="card-text">22 Items, Last updated: 5 Dec 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="electric-guitarist" class="row">
+                        <img src="./nlb-images/electric-guitarist.jpg" alt="">
+                    </div>
+                </div>
+            
+            </section>
         </div>
+
+
 
 
 
