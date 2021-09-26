@@ -21,7 +21,7 @@ body {
 .whole-wrapper {
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto;    
+    margin: 0 auto;
     background: skyblue;
     overflow: hidden;
     font-family: "Helvetica Neue";
@@ -30,17 +30,13 @@ body {
 }
 
 /* Whole wrapper - iPads, Tablets and  Mobile responsive from 100px */
-@media(max-width: 500px){
-    .whole-wrapper{
-        
-    }
+@media(max-width: 500px) {
+    .whole-wrapper {}
 }
 
 /* Whole wrapper - Normal desktops responsive  */
-@media(min-width: 500.1px) and (max-width: 1080px){
-    .whole-wrapper{
-        
-    }
+@media(min-width: 500.1px) and (max-width: 1080px) {
+    .whole-wrapper {}
 }
 
 
@@ -55,12 +51,12 @@ body {
 }
 
 /* Header 1 - Singapore Lion Logo */
-#header1 img{
+#header1 img {
     margin: 9px 9px 9px 0;
 }
 
 /* Header 1 - Text after Singapore Lion Logo */
-#header1 .header1-text{
+#header1 .header1-text {
     margin: 9px 9px 9px 0;
 }
 
@@ -74,11 +70,11 @@ body {
         padding: 0 10px;
     }
 
-    #header1 img{
+    #header1 img {
         margin: 9px 9px;
     }
 
-    #header1 .header1-text{
+    #header1 .header1-text {
         margin: 9px 9px;
     }
 }
@@ -89,5 +85,172 @@ body {
         align-items: center;
         flex-wrap: wrap;
         padding: 0 80px;
+    }
+}
+
+/* Header 2 (Navigation)  */
+#header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+
+#header2 .nlb-logo {
+    background: #264EA2;
+    width: 170px;
+    height: inherit;
+}
+
+#header2 .nlb-logo img {
+    padding: 14px 36px 18px 88px;
+}
+
+#header2 .musicSG-logo {
+    background: #AD3241;
+    color: white;
+    width: 1080px;
+    height: inherit;
+    padding: 14px 14px 27px 24px;
+}
+
+#musicSG-images button {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+#header2 .one-search {
+    background: #1F9892;
+    width: 190px;
+    height: inherit;
+    cursor: pointer;
+}
+
+#header2 .one-search img {
+    padding: 33.71px 37.71px 31.98px 37.77px;
+}
+
+/* Header 2 (Navigation) - Completely responsive from 140px  */
+@media(max-width: 500px) {
+    #header2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #header2 .nlb-logo {
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+    }
+
+    #header2 .nlb-logo img {
+        padding: 10px;
+    }
+
+    #header2 .musicSG-logo {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #header2 .one-search {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+
+    #header2 .one-search img {
+        padding: 10px;
+    }
+}
+
+/* Header 3 - Information  */
+.information {
+    display: flex;
+    justify-content: space-between;
+    left: 0px;
+    height: auto;
+    padding: 12px 83px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.info {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #264EA2;
+    text-decoration: none;
+}
+
+.advance-info{
+    margin-left: 380px;    
+}
+
+.info span {
+    margin: 0px 4px;
+}
+
+#lib {
+    color: #222222;
+}
+
+#lib i {
+    color: #264EA2;
+}
+
+#lib span a {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: #264EA2;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+#book {
+    color: #222222;
+}
+
+#book span {
+    font-size: 14px;
+    line-height: 20px;
+    color: #264EA2;
+    margin-right: 13px;
+}
+
+
+/* Header 3 (Information) Responsive */
+@media (max-width: 500px){
+    .information {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;      
+    }
+
+    .advance-info{
+        margin-left: 0px;    
+    }
+}
+
+@media (max-width: 1200px){
+
+    .information{
+        flex-wrap: nowrap;
+    }
+    .advance-info{
+        margin-left: 0px;    
     }
 }
