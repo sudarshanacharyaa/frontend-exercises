@@ -9,6 +9,9 @@
 
     <!-- CSS and Bootstrap imports -->
     <link rel="stylesheet" href="./css/nlbresponsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
     <!-- Title Icon -->
 
 </head>
@@ -23,7 +26,7 @@
                 <img src="./nlb-images/singapore-logo.png" alt="agency-title">
                 <div class="header1-text">A Singapore Government Agency Website</div>
             </nav>
-            
+
 
             <nav class="navigation" id="header2">
                 <div class="nlb-logo">
@@ -50,11 +53,13 @@
             <nav class="information" id="header3">
                 <div class="info" id="lib">
                     My Library: <i class="bi bi-geo-alt-fill"> </i>
-                    <span><a href="#"> library@orchard</a></span></div>
+                    <span><a href="#"> library@orchard</a></span>
+                </div>
 
                 <div class="info" id="book">
                     My Books:
-                    <span>English <a> + </a> </span></div>
+                    <span>English <a> + </a> </span>
+                </div>
 
                 <a class="info advance-info" href="#">My Folders</a>
 
@@ -72,7 +77,42 @@
 
         <!-- Hero area -->
         <main class="hero-grid-wrapper">
-            <div class="hero-text-left"></div>
+            <div class="hero-text-left">
+                <div id="hero-desc">
+                   <p>A collection of music composed or published by Singaporeans, music produced or published in
+                    Singapore,
+                    and music related to Singapore.</p> 
+                </div>
+
+                <div id="hero-heading">
+                    <p>I Want to Listen to</p>
+                </div>
+
+                <form id="hero-search" class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Explore any artists, title or genre"
+                        aria-label="Search">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <div class="hero-input-wrapper">
+                    <div class="hero-radio">
+                        <input type="radio" name="option" id="book-catalogue">
+                        <label class="radio-label" for="book-catalogue">Book Catalogue</label>
+
+                    </div>
+                    <div class="hero-radio">
+                        <input type="radio" name="option" id="one-search">
+                        <label class="radio-label" for="one-search">OneSearch</label>
+
+                    </div>
+                    <div class="hero-radio">
+                        <input type="radio" name="option" id="site-search">
+                        <label class="radio-label" for="site-search">Site Search</label>
+
+                    </div>
+                </div>
+
+            </div>
             <div class="hero-grid-right"></div>
         </main>
         <!-- Hero area end -->
