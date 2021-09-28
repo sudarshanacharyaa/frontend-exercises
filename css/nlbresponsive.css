@@ -673,8 +673,8 @@ body {
 
 #right-contentarea .card {
     padding: 0px !important;
-    width: 296px;
-    height: auto;
+    width: 304px;
+    height: 358px;
     margin-right: 50px;
 }
 
@@ -711,7 +711,7 @@ body {
 
 .card-body {
     padding: 20px !important;
-    width: 270px;
+    width: 300px;
     display: flex;
 }
 
@@ -757,4 +757,65 @@ body {
     padding: 4px 8px;
     line-height: 12px;
     text-transform: uppercase;
+}
+
+.row #col-margin{
+    margin-right: -370px !important;
+}
+
+.black-card-body span{
+    color: #222222;
+    font-weight: normal;    
+}
+
+.black-card-body .second-line{
+    color: #000000;
+}
+
+.black-card-body .read-more-tag{
+    color: #000000;
+    font-weight: bold;
+}
+
+.col-md-5{
+
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+    background: #AD3241;
+    width: max-content !important;
+
+
+}
+
+.col-md-7 {
+
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+    background: #AD3241;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: space-between !important;
+    padding-bottom: 5% !important;
+    color: white;
+
+}
+
+.col-md-7 span {
+    width: 65%;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    margin-left: 30px;
+
+}
+
+.col-md-7 i {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    margin: 0 32px 0 0;
 }
