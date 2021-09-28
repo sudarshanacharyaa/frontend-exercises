@@ -111,9 +111,10 @@
 
                     </div>
                 </div>
-
-
             </div>
+
+
+            <!-- Hero Grid only for 1440px  -->
             <div id="grid-custom" class="container-fluid">
                 <div class="row justify-content-end ">
 
@@ -131,8 +132,7 @@
                         <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
                         <img src="./nlb-images/black-tshirt-woman.jpg" alt="">
                     </div>
-                    <div id="cell-4" class="col-4 ">
-
+                    <div id="cell-4" class="col-4 bg-white ">
                         <img src="./nlb-images/Frame-520.png" alt="">
                     </div>
                 </div>
@@ -156,11 +156,12 @@
                     </div>
                 </div>
             </div>
-
-
-
-
+            <!-- End of Hero grid -->
         </main>
+        <!-- Hero area end -->
+
+
+        <!-- Carousel for smaller screens -->
         <div id="mobile-custom" class="container-fluid">
             <div class="carousel-arrow">
                 <span id="leftarrow" class="carousel-symbol"><i class="fas fa-arrow-left"></i></span>
@@ -197,31 +198,109 @@
                 </div>
             </div>
         </div>
-        <!-- Hero area end -->
+        <!-- End of Carousel for smaller screens -->
 
 
+        <!-- Single Maroon-box area -->
+        <div class="box" id="maroon-box-1"></div>
+        <!-- Single Maroon box area end -->
 
 
+        <!-- Sidebar and actual content area -->
+        <section class="content-wrapper">
+
+            <div class="sidebar" id="left-sidebar">
+                <span>Explore by genre</span>
+                <a href="">Chinese</a>
+                <a href="">Malay</a>
+                <a href="">Indian</a>
+                <a href="">Folk</a>
+                <a href="">Pop</a>
+                <a href="">Jazz</a>
+                <a href="">Rock/ Metal</a>
+                <a href="">Trance/ Techno</a>
+                <a href="">Indie</a>
+                <a href="">Hip-Hop</a>
+                <div class="dropdown">
+                    <a class="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-area" id="right-contentarea">
+                <div class="container-title">
+                    <span class="title-bullet"></span><span class="title-tag">Featured</span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card-border">
+                                <span class="featured-tag">featured</span>
+                                <span class="icons-overlay"><i class="fas fa-folder-plus"></i></span>
+                                <div class="row my-row "><img src="./nlb-images/sg-songs-fest-1.png" alt="oneSearch">
+                                </div>
+                                <div class="row my-row">
+                                    <div class="col"><img src="./nlb-images/sg-songs-fest-2.jpg" alt="oneSearch">
+                                    </div>
+                                    <div class="col"><img src="./nlb-images/sg-songs-fest-3.jpg" alt="oneSearch">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <i class="fas fa-th-large"></i>
+                                    <div class="card-content-wrapper">
+                                        <h6 class="card-title">Songs from SG Write the
+                                            Songs Festival</h6>
+                                        <p class="card-text">Official visits from US government officials to the
+                                            president
+                                            of the Republic of North Korea, Kim Jong-un.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card-border">
+                                <span class="featured-tag">featured</span>
+                                <span class="icons-overlay"><i class="fas fa-folder-plus"></i></span>
+                                <div class="row my-row "><img src="./nlb-images/diverse-bustling-1.jpg" alt="oneSearch">
+                                </div>
+                                <div class="row my-row">
+                                    <div class="col"><img src="./nlb-images/diverse-bustling-2.jpg" alt="oneSearch">
+                                    </div>
+                                    <div class="col"><img src="./nlb-images/diverse-bustling-3.png" alt="oneSearch">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <i class="fas fa-th-large"></i>
+                                    <div class="card-content-wrapper">
+                                        <h6 class="card-title">All About Singapore's Diverse
+                                            & Bustling Music</h6>
+                                        <p class="card-text">The music of Singapore reflects multi-culture and
+                                            multi-ethnic
+                                            influences that have shaped the country over the years.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Sidebar and actual content area end -->
 
 
+        <!-- Footer area -->
+        <footer class="footer-wrapper">
+            <div class="footer-primary" id="top-footer"></div>
+            <div class="footer-secondary" id="bottom-footer"></div>
+        </footer>
+        <!-- Footer area end -->
 
-    <!-- Single Maroon-box area -->
-    <div class="box" id="maroon-box-1"></div>
-    <!-- Single Maroon box area end -->
-
-    <!-- Sidebar and actual content area -->
-    <section class="content-wrapper">
-        <div class="sidebar" id="left-sidebar"></div>
-        <div class="content-area" id="right-contentarea"></div>
-    </section>
-    <!-- Sidebar and actual content area end -->
-
-    <!-- Footer area -->
-    <footer class="footer-wrapper">
-        <div class="footer-primary" id="top-footer"></div>
-        <div class="footer-secondary" id="bottom-footer"></div>
-    </footer>
-    <!-- Footer area end -->
 
     </div>
     <!-- End of whole wrapper -->
@@ -230,6 +309,7 @@
     <!-- Scripts area -->
     <script src="./js/carousel.js"></script>
     <script src="https://kit.fontawesome.com/8ade5e9773.js" crossorigin="anonymous"></script>
+    <!-- End of Scripts area -->
 </body>
 
 </html>

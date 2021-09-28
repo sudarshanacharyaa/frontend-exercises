@@ -13,6 +13,7 @@
 
 body {
     background: hotpink;
+    height: max-content !important;
 }
 
 /* Main CSS for NLB | Singapore Music starts */
@@ -20,10 +21,10 @@ body {
 /* Whole wrapper of webpage */
 .whole-wrapper {
     max-width: 1440px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     background: skyblue;
-    height: max-content;
+    height: max-content !important;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     font-style: normal;
     font-weight: bold;
@@ -382,6 +383,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+    padding: 0px !important; 
 }
 
 .col-4 {
@@ -391,11 +393,16 @@ body {
 
 }
 
+.col-4 img{
+    width: 196px;
+    height: 196px;
+}
+
 .even-rows {
     position: relative;
     left: -86px;
+    padding: 0px !important;
 }
-
 
 .bottom-right {
     position: absolute;
@@ -403,9 +410,6 @@ body {
     right: 0px;
     background: #AD3241;
     padding: 10px 19.28px 12px 16px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: bold;
     font-size: 12px;
     line-height: 18px;
     color: #FFFFFF;
@@ -417,19 +421,22 @@ body {
 
 .even-rows {
     position: relative;
-    left: 135px;
+    left: 143px;
+}
+
+.even-rows img{
+    height: 198px !important;
 }
 
 #mobile-custom{
     display: none;
 }
 
+/* Hero Grid Right area responsive */
 @media(max-width: 1439px){
-
     #mobile-custom{
         display: block;
     }
-
     #grid-custom{
         display: none
     }
@@ -445,9 +452,6 @@ body {
     .bottom-right-mob {
         background: #AD3241;
         padding: 10px 19.28px 12px 16px;
-        font-family: "Helvetica Neue";
-        font-style: normal;
-        font-weight: bold;
         font-size: 12px;
         line-height: 18px;
         color: #FFFFFF;
@@ -499,12 +503,10 @@ body {
     }
 }
 
+/* Seperate Maroon Box which will be made display:none in other responsive design*/
 .box {
     width: 196px;
     height: 196px;
-    /* float: left; */
-
-
 }
 
 #maroon-box-1 {
@@ -512,8 +514,247 @@ body {
 }
 
 @media(max-width:1439px){
-
     .box {
         display: none;
     }
+}
+
+
+/* Content Wrapper */
+.content-wrapper{
+    display: flex;
+}
+
+/* Sidebar */
+
+#left-sidebar{
+    width: max-content;
+    height: auto;
+    padding: 82px 87px;
+    margin-right: 55px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+}
+
+.sidebar a {
+    text-decoration: none;
+    width: 182px;
+    font-size: 28px;
+    line-height: 34px;
+    color: #222222;
+    opacity: 0.2;
+    margin: 32px 0px;
+}
+
+.sidebar span {
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.sidebar .dropdown {
+    margin: 32px 0px;
+}
+
+.sidebar .dropdown a i {
+    width: 18px;
+    height: 9px;
+}
+
+/* Sidebar Mobile Responsive */
+
+@media(max-width:500px){
+    #left-sidebar{
+        padding: 10px;
+        margin-right: 0px;
+        text-align: center;
+        color: #222222;
+        width: 100%;
+    }
+
+    .sidebar a {
+        width: auto;
+        font-size: 20px;
+        line-height: 25px;
+        color: #222222;
+        opacity: 0.2;
+        margin: 10px 0px;
+    }
+    
+    .sidebar span {
+        margin: 30px;
+        font-size: 12px;
+        line-height: 10px;
+        color: #AD3241;
+    }
+    
+    .sidebar .dropdown {
+        margin: 10px 0px;
+    }
+    
+    .sidebar .dropdown a i {
+        width: 10px;
+        height: 5px;
+    }
+}
+
+/* Sidebar tablets and ipads responsive */
+
+@media (min-width:500.1px) and (max-width:800px) {
+    #left-sidebar{
+        width: auto;
+        padding: 50px 55px;
+        margin-right: 0px;       
+    }
+    
+    .sidebar a {
+        width: 150px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    .sidebar .dropdown {
+        margin: 32px 0px;
+    }
+    
+    .sidebar .dropdown a i {
+        width: 18px;
+        height: 9px;
+    }
+}
+
+/* Right side content area */
+#right-contentarea{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: -100px 0 345px 0;
+}
+
+.title-bullet {
+    background: #AD3241;
+    color: #AD3241;
+    padding: 4px;
+    margin: 0px 0px 24px 0px;
+    margin-right: 10px;
+    float: left;
+    height: 30px;
+}
+
+#right-contentarea .row {
+    margin: 30px 0px;
+    object-fit: cover;
+}
+
+#right-contentarea .row .col {
+    padding: 0px !important;
+}
+
+.container-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 24px 0px;
+}
+
+.card-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #AD3241;
+    font-weight: bold;
+}
+
+.title-tag{
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#right-contentarea .card {
+    padding: 0px !important;
+    width: 296px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.card-border {
+    border: 12px double #AD3241 !important;
+    border-top: none !important;
+    border-left: none !important;
+}
+
+.card .row {
+    margin: 0px !important;
+}
+
+.my-row {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 300px;
+    object-fit: cover;
+    padding: 0px !important;
+
+}
+
+.my-row img {
+    width: 100%;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.my-row .col {
+    padding: 0px !important;
+
+}
+
+.card-body {
+    padding: 20px !important;
+    width: 270px;
+    display: flex;
+}
+
+
+
+.card-body i{
+    width: 16.4px;
+    height: 12.8px;
+    color: #222222;
+    margin-right: 20px;
+   
+}
+
+.card-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.icons-overlay i {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 35px;
+    background: #264EA2;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    padding: 6px;
+}
+
+.featured-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #AD3241;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    padding: 4px 8px;
+    line-height: 12px;
+    text-transform: uppercase;
 }
