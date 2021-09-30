@@ -5,115 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NLB | Singapore Music</title>
-
-    <!-- CSS and Bootstrap imports -->
-    <link rel="stylesheet" href="./css/nlbresponsive.css">
+    <title>Singapore | NLB-Music</title>
+    <link rel="stylesheet" href="../css/nlb.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <!-- Title Icon -->
 
 </head>
 
 <body>
-    <!-- Whole Page wrapper -->
-    <div class="whole-wrapper">
+    <div class="wrapper">
+        <div class="header-wrapper">
 
-        <!-- Header area -->
-        <header class="header-wrapper">
-            <nav class="agency-title" id="header1">
+            <header class="agency-title ">
                 <img src="./nlb-images/singapore-logo.png" alt="agency-title">
-                <div class="header1-text">A Singapore Government Agency Website</div>
-            </nav>
+                <span>A Singapore Government Agency Website</span>
+            </header>
 
-
-            <nav class="navigation" id="header2">
+            <nav class="navigation-bar">
                 <div class="nlb-logo">
-                    <a href="#"><img src="./nlb-images/nlb_logo.png" alt="nlb-logo"></a>
+                    <img src="./nlb-images/nlb_logo.png" alt="nlb-logo">
                 </div>
 
-                <div class="musicSG-logo">
-                    <div id="header2-text">CollectionSG</div>
-                    <div id="musicSG-images">
-                        <button>
-                            <img src="./nlb-images/music_sg_white-1.png" alt="music">
-                            <img src="./nlb-images/music_sg_white-2.png" alt="sg">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                <div class="music-logo">
+                    <div class="heading">CollectionSG</div>
+                    <div class="images">
+                        <img src="./nlb-images/music_sg_white-1.png" alt="music">
+                        <img src="./nlb-images/music_sg_white-2.png" alt="sg">
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
 
                 <div class="one-search">
-                    <a href="#"><img src="./nlb-images/one_search.png" alt="oneSearch"></a>
+                    <img src="./nlb-images/one_search.png" alt="oneSearch">
                 </div>
             </nav>
 
+            <header class="info-header">
 
-            <nav class="information" id="header3">
-                <div class="info" id="lib">
-                    My Library: <i class="bi bi-geo-alt-fill"> </i>
-                    <span><a href="#"> library@orchard</a></span>
-                </div>
+                <div class="info" id="lib">My Library:<i class="bi bi-geo-alt-fill"></i><span><a
+                            href="#">library@orchard</a></span></div>
+                <div class="info" id="book">My Books: <span>English</span><i class="bi bi-plus"></i></div>
 
-                <div class="info" id="book">
-                    My Books:
-                    <span>English <a> + </a> </span>
-                </div>
-
-                <a class="info advance-info" href="#">My Folders</a>
-
+                <a class="info a" href="#">My Folders</a>
                 <div class="info"><i class="fas fa-heart"></i><span>43</span></div>
-
-                <div class="info">
-                    <i class="fas fa-user"> </i><span> Calvin Ho </span>
-                    <i class="fas fa-chevron-down"></i>
+                <div class="info"><i class="fas fa-user"></i><span>Calvin Ho</span><i class="fas fa-chevron-down"></i>
                 </div>
-
                 <i class="fas fa-search info"></i>
-            </nav>
-        </header>
-        <!-- Header area end -->
 
-        <!-- Hero area -->
-        <main class="hero-grid-wrapper">
-            <div class="hero-text-left">
-                <div id="hero-desc">
-                    <p>A collection of music composed or published by Singaporeans, music produced or published in
-                        Singapore,
-                        and music related to Singapore.</p>
-                </div>
+            </header>
+        </div>
 
-                <div id="hero-heading">
-                    <p>I Want to Listen to</p>
-                </div>
-
-                <form id="hero-search" class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Explore any artists, title or genre"
-                        aria-label="Search">
-                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-                </form>
-
-                <div class="hero-input-wrapper">
-                    <div class="hero-radio">
-                        <input type="radio" name="option" id="book-catalogue">
-                        <label class="radio-label" for="book-catalogue">Book Catalogue</label>
-
-                    </div>
-                    <div class="hero-radio">
-                        <input type="radio" name="option" id="one-search">
-                        <label class="radio-label" for="one-search">OneSearch</label>
-
-                    </div>
-                    <div class="hero-radio">
-                        <input type="radio" name="option" id="site-search">
-                        <label class="radio-label" for="site-search">Site Search</label>
-
-                    </div>
-                </div>
+        <section class="hero-banner">
+            <div class="desc">
+                A collection of music composed or published by Singaporeans, music produced or published in Singapore,
+                and music related to Singapore.
             </div>
 
-            <!-- Hero Grid only for 1440px and above  -->
+            <div class="heading">
+                I Want to Listen to
+            </div>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Explore any artists, title or genre"
+                    aria-label="Search">
+                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
             <div id="grid-custom" class="container-fluid">
                 <div class="row justify-content-end ">
 
@@ -131,7 +89,8 @@
                         <span class="bottom-right">Explore <i class="fas fa-arrow-right"></i></span>
                         <img src="./nlb-images/black-tshirt-woman.jpg" alt="">
                     </div>
-                    <div id="cell-4" class="col-4 bg-white ">
+                    <div id="cell-4" class="col-4 bg-white">
+                        
                         <img src="./nlb-images/Frame-520.png" alt="">
                     </div>
                 </div>
@@ -155,98 +114,42 @@
                     </div>
                 </div>
             </div>
-            <!-- End of Hero grid -->
-        </main>
-        <!-- Hero area end -->
+        </section>
 
+        <div class="box" id="first-box"></div>
 
-        <!-- Carousel for smaller screens -->
-        <div id="mobile-custom" class="container-fluid">
-            <div class="carousel-arrow">
-                <span id="leftarrow" class="carousel-symbol"><i class="fas fa-arrow-left"></i></span>
-                <span id="rightarrow" class="carousel-symbol"><i class="fas fa-arrow-right"></i></span>
-            </div>
+        <div class="nav-content-container">
+            <section class="sidebar">
+                <span>Explore by genre</span>
+                <a href="">Chinese</a>
+                <a href="">Malay</a>
+                <a href="">Indian</a>
+                <a href="">Folk</a>
+                <a href="">Pop</a>
+                <a href="">Jazz</a>
+                <a href="">Rock/ Metal</a>
+                <a href="">Trance/ Techno</a>
+                <a href="">Indie</a>
+                <a href="">Hip-Hop</a>
+                <div class="dropdown">
+                    <a class="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others <i class="fas fa-chevron-down"></i>
+                    </a>
 
-            <div id="root-custom" class="custom-row ">
-                <div id="mob-1" class="mob-cell">
-                    <img src="./nlb-images/red-jacket.jpg" alt="">
-                    <span class="bottom-right-mob">Explore <i class="fas fa-arrow-right"></i></span>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                 </div>
-                <div id="mob-2" class="mob-cell">
-                    <img src="./nlb-images/graduated-oldman.jpg" alt="">
-                    <span class="bottom-right-mob">Explore <i class="fas fa-arrow-right"></i></span>
-                </div>
+            </section>
 
-                <div id="mob-3" class="mob-cell">
-                    <img src="./nlb-images/black-tshirt-woman.jpg" alt="">
-                    <span class="bottom-right-mob">Explore <i class="fas fa-arrow-right"></i></span>
-                </div>
-
-                <div id="mob-5" class="mob-cell">
-                    <img src="./nlb-images/songs-for-lostchoices-1.jpg" alt="">
-                    <span class="bottom-right-mob">Explore <i class="fas fa-arrow-right"></i></span>
-                </div>
-                <div id="mob-6" class="mob-cell">
-                    <img src="./nlb-images/alone_li-wei.jpg" alt="">
-                    <span class="bottom-right-mob">Explore <i class="fas fa-arrow-right"></i></span>
-                </div>
-
-                <div id="mob-8" class="mob-cell">
-                    <img src="./nlb-images/black-jacket.jpg" alt="">
-                    <span class="bottom-right-mob">Explore <i class="fas fa-arrow-right"></i></span>
-                </div>
-            </div>
-        </div>
-        <!-- End of Carousel for smaller screens -->
-
-
-        <!-- Single Maroon-box area -->
-        <div class="box" id="maroon-box-1"></div>
-        <!-- Single Maroon box area end -->
-
-
-        <!-- Sidebar and actual content area -->
-        <section class="content-wrapper">
-
-            <div class="sidebar" id="left-sidebar">
-                <div class="explore-container">
-                    <input type="checkbox" id="collapsesidebar">
-                    <label for="collapsesidebar">Explore by genre <i class="fas fa-chevron-down"></i></label>
-                    <div class="sidebar-wrapper">
-                        <a href="">Chinese</a>
-                        <a href="">Malay</a>
-                        <a href="">Indian</a>
-                        <a href="">Folk</a>
-                        <a href="">Pop</a>
-                        <a href="">Jazz</a>
-                        <a href="">Rock/ Metal</a>
-                        <a href="">Trance/ Techno</a>
-                        <a href="">Indie</a>
-                        <a href="">Hip-Hop</a>
-                        <div class="dropdown">
-                            <a class="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Others <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">SG Tamil</a></li>
-                                <li><a class="dropdown-item" href="#">SG Folk</a></li>
-                                <li><a class="dropdown-item" href="#">SG Movies</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="content-area" id="right-contentarea">
+            <section class="featured-container">
                 <div class="container-title">
-                    <span class="title-bullet"></span><span class="title-tag">Featured</span>
+                    <span class="title-bullet"></span><span>Featured</span>
                     <div class="row">
                         <div class="col">
                             <div class="card card-border">
-                                <span class="featured-tag">featured</span>
                                 <span class="icons-overlay"><i class="fas fa-folder-plus"></i></span>
                                 <div class="row my-row "><img src="./nlb-images/sg-songs-fest-1.png" alt="oneSearch">
                                 </div>
@@ -257,23 +160,18 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <i class="fas fa-th-large"></i>
-                                    <div class="card-content-wrapper">
-                                        <h6 class="card-title">Songs from SG Write the
-                                            Songs Festival</h6>
-                                        <p class="card-text">Official visits from US government officials to the
-                                            president
-                                            of the Republic of North Korea, Kim Jong-un.</p>
-                                    </div>
+                                    <h6 class="card-title"><i class="fas fa-th-large"></i>Songs from SG Write the
+                                        Songs Festival</h6>
+                                    <p class="card-text">Official visits from US government officials to the president
+                                        of the Republic of North Korea, Kim Jong-un.</p>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row row-flex">
-                        <div class="col " id="col-margin">
+                    <div class="row">
+                        <div class="col">
                             <div class="card card-border">
-                                <span class="featured-tag">featured</span>
                                 <span class="icons-overlay"><i class="fas fa-folder-plus"></i></span>
                                 <div class="row my-row "><img src="./nlb-images/diverse-bustling-1.jpg" alt="oneSearch">
                                 </div>
@@ -284,51 +182,39 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <i class="fas fa-th-large"></i>
-                                    <div class="card-content-wrapper">
-                                        <h6 class="card-title">All About Singapore's Diverse
-                                            & Bustling Music</h6>
-                                        <p class="card-text">The music of Singapore reflects multi-culture and
-                                            multi-ethnic
-                                            influences that have shaped the country over the years.</p>
-                                    </div>
+                                    <h6 class="card-title"><i class="fas fa-th-large"></i>All About Singapore's Diverse
+                                        & Bustling Music</h6>
+
+                                    <p class="card-text">The music of Singapore reflects multi-culture and multi-ethnic
+                                        influences that have shaped the country over the years.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card black-card">
-                                <span class="featured-tag">featured</span>
-                                <span class="icons-overlay"><i class="fas fa-folder-plus"></i></span>
+                            <div class="card">
+
                                 <div class="row my-row ">
                                     <span class="icons-overlay"><i class="fas fa-folder-plus"></i></span>
                                     <img src="./nlb-images/singapore-to-world-development.jpg">
                                 </div>
 
-                                <div class="card-body black-card-body">
-                                    <i class="bi bi-newspaper"></i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-title">
-                                            <span>2010, 20 Aug</span>
-                                            <p class="second-line"> From Singapore to the World: Development in the
-                                                Singapore Chinese Music
-                                                Scene</p>
-                                        </h4>
-                                        <p class="card-text">From immigrants seeking to keep in touch with one’s ethnic
-                                            roots to citizens who sought national identity and pride through singing
-                                            one’s
-                                            own songs.</p>
-                                        <p class="card-text read-more-tag">Read More <i class="fas fa-arrow-right"></i>
-                                        </p>
-                                    </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="bi bi-newspaper"></i><span style="color: #222222; font-weight: normal;">2010, 20 Aug</span>
+                                        <p style="color: black;"> From Singapore to the World: Development in the Singapore Chinese Music
+                                            Scene</p>
+                                    </h4>
+                                    <p class="card-text">From immigrants seeking to keep in touch with one’s ethnic
+                                        roots to citizens who sought national identity and pride through singing one’s
+                                        own songs.</p>
+                                    <p class="card-text" style="color: black; font-weight: bold;">Read More <i class="fas fa-arrow-right"></i></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="container-title">
                     <span class="title-bullet"></span><span>Recommended Based on Your Interest</span>
-                    <div class="row jazz-wrap">
+                    <div class="row">
                         <div class="col-md-5">
                             <img src="./nlb-images/jazz-vector-art.jpg" alt="oneSearch">
                         </div>
@@ -341,13 +227,9 @@
                 </div>
 
                 <div class="container-title">
-                    <p class="title-bullet"></p>
-                    <div class="heading-wrapper">
-                        <p>Popular Artist of the Year</p>
-                        <p class="ptag-link"><a href="#"><small> Explore more artists</small></a></p>
-                    </div>
-
-                    <div class="row custom-row-width ">
+                    <p class="title-bullet"></p><p class="titlewithlink">Popular Artist of the Year </p>
+                    <p class="ptag-link" ><a href="#"><small> Explore more artists</small></a></p>
+                    <div class="row" style="clear: both;" >
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="row my-row ">
@@ -355,7 +237,7 @@
                                     <img src="./nlb-images/Dick-Lee.png">
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="card-heading"><i class="fas fa-user"></i>Music from Dick Lee</h4>
+                                    <h4 class="card-title"><i class="fas fa-user"></i>Music from Dick Lee</h4>
                                 </div>
                             </div>
                         </div>
@@ -366,7 +248,7 @@
                                     <img src="./nlb-images/Corrine-May.png">
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="card-heading"><i class="fas fa-user"></i>Music from Corrine May</h4>
+                                    <h4 class="card-title"><i class="fas fa-user"></i>Music from Corrine May</h4>
                                 </div>
                             </div>
                         </div>
@@ -377,20 +259,16 @@
                                     <img src="./nlb-images/Fann-Wong.png">
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="card-heading"><i class="fas fa-user"></i>Music from Fann Wong</h4>
+                                    <h4 class="card-title"><i class="fas fa-user"></i>Music from Fann Wong</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="container-title">
-                    <p class="title-bullet"></p>
-                    <div class="heading-wrapper">
-                        <p>Trending Albums</p>
-                        <p class="ptag-link"><a href="#"><small> Explore more albums</small></a></p>
-                    </div>
-                    <div class="row custom-row-width">
+                    <p class="title-bullet"></p><p class="titlewithlink">Trending Albums </p>
+                    <p class="ptag-link" ><a href="#"><small> Explore more albums</small></a></p>
+                    <div class="row" style="clear: both;" >
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="row my-row ">
@@ -399,8 +277,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"></i>
-                                    <h4 class="card-heading">t.time, Tanya Chua
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"></i></i>t.time, Tanya Chua
                                     </h4>
 
                                 </div>
@@ -414,8 +291,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"></i>
-                                    <h4 class="card-heading">A Perfect Day,
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"></i></i>A Perfect Day,
                                         Yanzi Sun 燕姿</h4>
 
                                 </div>
@@ -429,8 +305,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"></i>
-                                    <h4 class="card-heading">Love is The
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"></i></i>Love is The
                                         Answer, Corrine May</h4>
 
                                 </div>
@@ -444,8 +319,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"></i>
-                                    <h4 class="card-heading">Antara yang manis,
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"></i></i>Antara yang manis,
                                         Anita Sarawak</h4>
 
                                 </div>
@@ -455,17 +329,10 @@
                     </div>
                 </div>
 
-                <div class="container big-container">
-                    <div class="row big-row">
-                        <div class="col big-col">
-                            <div class=" card card-big">
-                                <span class="bottom-right2">Are you a local composer, lyricist or musician? Contribute
-                                    your music
-                                    today <i class="fas fa-arrow-right"></i></span>
-                                <img src="./nlb-images/electric-guitarist.jpg">
-                            </div>
-                        </div>
-                    </div>
+                <div id="electric-guitarist" class="">
+                    <span class="bottom-right2">Are you a local composer, lyricist or musician? Contribute your music
+                        today <i class="fas fa-arrow-right"></i></span>
+                    <img src="./nlb-images/electric-guitarist.jpg" alt="">
                 </div>
 
                 <div class="container-title ">
@@ -478,15 +345,12 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="fas fa-user"></i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading">Music from Stefanie Sun
-                                        </h4>
+                                    <h4 class="card-title"><i class="fas fa-user"></i>Music from Stefanie Sun
+                                    </h4>
 
-                                        <p class="card-text">In 2000, she took the Chinese
-                                            pop music markets in
-                                            Singapore and Taiwan by storm.</p>
-                                    </div>
+                                    <p class="card-text">In 2000, she took the Chinese
+                                        pop music markets in
+                                        Singapore and Taiwan by storm.</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -497,16 +361,12 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-newspaper"></i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading">2010, Aug
-                                            Jeremy Monteiro: The King of Swing</h4>
-                                        <p class="card-text">At home, he is the only jazz musician so far to have been
-                                            conferred the pivotal Cultural Medallion award for his contribution to
-                                            Singapore
-                                            music.</p>
-                                        <p class="card-heading">Read More <i class="fas fa-arrow-right"></i></p>
-                                    </div>
+                                    <h4 class="card-title"><i class="bi bi-newspaper"></i>2010, Aug
+                                        Jeremy Monteiro: The King of Swing</h4>
+                                    <p class="card-text">At home, he is the only jazz musician so far to have been
+                                        conferred the pivotal Cultural Medallion award for his contribution to Singapore
+                                        music.</p>
+                                    <p class="card-text">Read More <i class="fas fa-arrow-right"></i></p>
                                 </div>
                             </div>
                             <div class="card round-image">
@@ -515,15 +375,13 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="fas fa-user"></i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading">Music from Ramli Sarip
-                                        </h4>
-                                        <p class="card-text"> A Singaporean rock legend
-                                            and arguably one of the
-                                            country’s most commercially
-                                            successful artistes.</p>
-                                    </div>
+                                    <h4 class="card-title"><i class="fas fa-user"></i>Music from Ramli Sarip
+                                    </h4>
+                                    <p class="card-text"> A Singaporean rock legend
+                                        and arguably one of the
+                                        country’s most commercially
+                                        successful artistes.</p>
+
                                 </div>
                             </div>
                             <div class="card">
@@ -533,16 +391,12 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"></i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading">Malay Traditional
-                                            Music in
-                                            Singapore</h4>
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"></i> Malay Traditional
+                                        Music in
+                                        Singapore</h4>
 
-                                        <p class="card-text">Styles, namely Dondang, Sayang and Keroncong, enjoy the
-                                            most
-                                            popular among the Singaporean Malays.</p>
-                                    </div>
+                                    <p class="card-text">Styles, namely Dondang, Sayang and Keroncong, enjoy the most
+                                        popular among the Singaporean Malays.</p>
                                 </div>
                             </div>
                         </div>
@@ -554,13 +408,10 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"> </i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading"> Chares J. Tan, Maybe
-                                            Somewhere North</h4>
-                                        <p class="card-text">All songs written by Charles J Tan. Except, On your side,
-                                            written with Irving Koh.</p>
-                                    </div>
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"> </i> Chares J. Tan, Maybe
+                                        Somewhere North</h4>
+                                    <p class="card-text">All songs written by Charles J Tan. Except, On your side,
+                                        written with Irving Koh.</p>
 
                                 </div>
                             </div>
@@ -571,14 +422,12 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="fas fa-user"> </i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading"> Music from Pinholes
-                                        </h4>
-                                        <p class="card-text"> Local sound and homage to
-                                            past music greats like The
-                                            Kinks and The Beatles.</p>
-                                    </div>
+                                    <h4 class="card-title"><i class="fas fa-user"> </i> Music from Pinholes
+                                    </h4>
+                                    <p class="card-text"> Local sound and homage to
+                                        past music greats like The
+                                        Kinks and The Beatles.</p>
+
                                 </div>
                             </div>
 
@@ -588,11 +437,9 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"> </i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading">The Red Album,
-                                            Various Artistes</h4>
-                                    </div>
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"> </i>The Red Album,
+                                        Various Artistes</h4>
+
                                 </div>
                             </div>
 
@@ -606,11 +453,8 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"></i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading"> Songs For Lost
-                                            Choices, Kelvin Tan</h4>
-                                    </div>
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"></i> Songs For Lost
+                                        Choices, Kelvin Tan</h4>
 
                                 </div>
                             </div>
@@ -623,16 +467,12 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-newspaper"></i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading">2002
-                                            The Golden Age of Singapore Disco</h4>
-                                        <p class="card-text">First generation disco, radio DJ, sports commentator Brian
-                                            Richmond describes a largely undocumented part of Singapore’s early social
-                                            life.
-                                        </p>
-                                        <h4 class="card-heading">Read More <i class="fas fa-arrow-right"></i></h4>
-                                    </div>
+                                    <h4 class="card-title"><i class="bi bi-newspaper"></i>2002
+                                        The Golden Age of Singapore Disco</h4>
+                                    <p class="card-text">First generation disco, radio DJ, sports commentator Brian
+                                        Richmond describes a largely undocumented part of Singapore’s early social life.
+                                    </p>
+                                    <h4 class="card-title">Read More <i class="fas fa-arrow-right"></i></h4>
                                 </div>
                             </div>
 
@@ -642,15 +482,10 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <i class="bi bi-music-note-beamed"></i>
-                                    <div class="card-content-wrapper">
-                                        <h4 class="card-heading">Hits of the 70s</h4>
-                                        <p class="card-text">Organised by the Eurasian Association, Singapore to raise
-                                            funds
-                                            for the reconstruction and rehabilitation of communities recovering from the
-                                            26
-                                            Dec. 2004 tsunami disaster.</p>
-                                    </div>
+                                    <h4 class="card-title"><i class="bi bi-music-note-beamed"></i>Hits of the 70s</h4>
+                                    <p class="card-text">Organised by the Eurasian Association, Singapore to raise funds
+                                        for the reconstruction and rehabilitation of communities recovering from the 26
+                                        Dec. 2004 tsunami disaster.</p>
 
                                 </div>
                             </div>
@@ -658,14 +493,10 @@
                     </div>
 
                 </div>
+        </div>
 
-        </section>
-        <!-- Sidebar and actual content area end -->
-
-
-        <!-- Footer area -->
-        <footer class="footer-wrapper">
-            <div class="footer-primary" id="top-footer">
+        <footer>
+            <div class="main-footer">
                 <div class="contact">
                     <span class="ftr-logo"><img src="./nlb-images/primary-footer-nlb-logo.png" alt="nlb-logo"></span>
                     <span class="ftr-nlb-img"><img src="./nlb-images/primary-footer-nlb-logotext.png"
@@ -723,7 +554,7 @@
                 </div>
             </div>
 
-            <div class="footer-secondary" id="bottom-footer">
+            <div class="footer-lower">
                 <div><img id="brand1" src="./nlb-images/sec-footer-brand-1.png" alt="brand-1"></div>
                 <img id="brand2" src="./nlb-images/sec-footer-brand-1.png" alt="brand-2">
                 <img id="brand3" src="./nlb-images/sec-footer-brand-3.png" alt="brand-3">
@@ -744,17 +575,12 @@
                 </div>
             </div>
         </footer>
-        <!-- Footer area end -->
+
+
 
 
     </div>
-    <!-- End of whole wrapper -->
-
-
-    <!-- Scripts area -->
-    <script src="./js/carousel.js"></script>
     <script src="https://kit.fontawesome.com/8ade5e9773.js" crossorigin="anonymous"></script>
-    <!-- End of Scripts area -->
 </body>
 
 </html>
