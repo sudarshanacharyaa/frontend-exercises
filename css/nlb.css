@@ -14,13 +14,10 @@ body {
 }
 
 .wrapper {
-
     max-width: 1440px;
     margin: 0 auto !important;
     background: #FFFFFF;
     overflow: hidden;
-
-
 }
 
 .agency-title {
@@ -572,7 +569,7 @@ body {
     justify-content: space-between !important;
     padding-bottom: 5% !important;
     color: white;
-
+    
 }
 
 .col-md-7 span {
